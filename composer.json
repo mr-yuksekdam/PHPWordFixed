@@ -1,5 +1,5 @@
 {
-    "name": "mr-yuksekdam/PHPWordFixed",
+    "name": "mr-yuksekdam/php-word-fixed",
     "description": "Updated PhpWord, fixed TOC auto number",
     "keywords": [
         "PHP", "PHPOffice", "office", "PHPWord", "word", "template", "template processor", "reader", "writer",
