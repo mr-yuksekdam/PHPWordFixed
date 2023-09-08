@@ -85,7 +85,7 @@ class TOC extends AbstractElement
 
         // Hyperlink
         $xmlWriter->startElement('w:hyperlink');
-        $xmlWriter->writeAttribute('w:anchor', "_Toc{$rId}");
+        $xmlWriter->writeAttribute('w:anchor', "$rId");
         $xmlWriter->writeAttribute('w:history', '1');
 
         // Title text
@@ -112,7 +112,7 @@ class TOC extends AbstractElement
         $xmlWriter->startElement('w:r');
         $xmlWriter->startElement('w:instrText');
         $xmlWriter->writeAttribute('xml:space', 'preserve');
-        $xmlWriter->text("PAGEREF _Toc{$rId} \\h");
+        $xmlWriter->text("PAGEREF $rId \\p");
         $xmlWriter->endElement();
         $xmlWriter->endElement();
 
@@ -188,7 +188,7 @@ class TOC extends AbstractElement
         $xmlWriter->startElement('w:r');
         $xmlWriter->startElement('w:instrText');
         $xmlWriter->writeAttribute('xml:space', 'preserve');
-        $xmlWriter->text("TOC \\o {$minDepth}-{$maxDepth} \\h \\z \\u");
+        $xmlWriter->text("TOC \o {$minDepth}-{$maxDepth} \h \z \u");
         $xmlWriter->endElement();
         $xmlWriter->endElement();
 
